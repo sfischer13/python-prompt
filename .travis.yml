@@ -1,0 +1,17 @@
+language: python
+
+branches:
+  only:
+    - master
+
+env:
+  - TOX_ENV=py32
+  - TOX_ENV=py33
+  - TOX_ENV=py34
+  - TOX_ENV=pypy3
+
+install:
+  - pip install tox
+
+script:
+  - tox -v -e $TOX_ENV
