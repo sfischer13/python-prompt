@@ -10,7 +10,7 @@ Python prompt Package
 -  `Questions <mailto:sfischer13@ymail.com>`__ can be asked via e-mail.
 -  `Source code <http://github.com/sfischer13/python-prompt>`__ is
    tracked on GitHub.
--  `Changes <CHANGELOG.md>`__ between releases are documented.
+-  `Changes <CHANGELOG.rst>`__ between releases are documented.
 -  `Bugs <https://github.com/sfischer13/python-prompt/issues>`__ can be
    reported on the issue tracker.
 
@@ -45,7 +45,7 @@ Contribute
   `contributors <https://github.com/sfischer13/python-prompt/graphs/contributors>`__
   have done so before.
 
--  `Roadmap <TODO.md>`__ of planned improvements
+-  `Roadmap <TODO.rst>`__ of planned improvements
 -  `Issues <https://github.com/sfischer13/python-prompt/issues>`__ that
    have been reported
 
