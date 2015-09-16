@@ -14,7 +14,7 @@ def read(name):
 
 setup(
     name="prompt",
-    version="0.1.0a1",
+    version="0.1.0",
     author="Stefan Fischer",
     author_email="sfischer13@ymail.com",
     url="https://github.com/sfischer13/python-prompt/",
@@ -26,6 +26,7 @@ setup(
     packages=find_packages("src"),
     package_dir={"": "src"},
     classifiers=[
+        "Development Status :: 4 - Beta",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
