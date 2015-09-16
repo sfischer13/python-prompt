@@ -1,21 +1,25 @@
-Python prompt Package
+Python Prompt Package
 =====================
 
 |PyPI Version| |PyPI Downloads| |Travis|
 
 | This is a library for prompting input on the command line.
+| Python 3.2+ and Wheels are supported.
 | It was initiated by Stefan Fischer and is developed and maintained by
   many others.
 
 -  `Questions <mailto:sfischer13@ymail.com>`__ can be asked via e-mail.
--  `Source code <http://github.com/sfischer13/python-prompt>`__ is
+-  `Source code <https://github.com/sfischer13/python-prompt>`__ is
    tracked on GitHub.
--  `Changes <CHANGELOG.rst>`__ between releases are documented.
+-  `Changes <https://github.com/sfischer13/python-prompt/CHANGELOG.rst>`__
+   between releases are documented.
 -  `Bugs <https://github.com/sfischer13/python-prompt/issues>`__ can be
    reported on the issue tracker.
 
 Install
 -------
+
+|PyPI Python Versions| |PyPI Wheel|
 
 The package is available on
 `PyPI <https://pypi.python.org/pypi/prompt>`__:
@@ -23,9 +27,6 @@ The package is available on
 ::
 
     $ pip install prompt
-
-| Python 3.2+ is required: |PyPI Python Versions|
-| Wheels are supported: |PyPI Wheel|
 
 Use
 ---
@@ -35,7 +36,15 @@ The package may be imported directly:
 ::
 
     import prompt
-    integer = prompt.integer("Please enter a number: ")
+
+    # modify default prompt
+    integer = prompt.integer(prompt="Please enter a number: ")
+
+    # allow empty response and return None
+    real = prompt.real(empty=True)
+
+    # require a two digit number
+    regex = prompt.regex("^\d\d$")
 
 Contribute
 ----------
@@ -45,17 +54,19 @@ Contribute
   `contributors <https://github.com/sfischer13/python-prompt/graphs/contributors>`__
   have done so before.
 
--  `Roadmap <TODO.rst>`__ of planned improvements
+-  `Roadmap <https://github.com/sfischer13/python-prompt/blob/master/TODO.rst>`__
+   of planned improvements
 -  `Issues <https://github.com/sfischer13/python-prompt/issues>`__ that
    have been reported
 
-License |License|
------------------
+License
+-------
 
 | Copyright (c) 2015 Stefan Fischer
-| The source code is available under the `MIT
-  License <http://www.opensource.org/licenses/mit-license.php>`__.
-| See `LICENSE <LICENSE>`__ for further details.
+| The source code is available under the **MIT License**.
+| See
+  `LICENSE <https://github.com/sfischer13/python-prompt/blob/master/LICENSE>`__
+  for further details.
 
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/prompt.svg
    :target: https://pypi.python.org/pypi/prompt
@@ -67,5 +78,3 @@ License |License|
    :target: https://pypi.python.org/pypi/prompt
 .. |PyPI Wheel| image:: https://img.shields.io/pypi/wheel/prompt.svg
    :target: https://pypi.python.org/pypi/prompt
-.. |License| image:: https://img.shields.io/github/license/sfischer13/python-prompt.svg
-   :target: LICENSE
