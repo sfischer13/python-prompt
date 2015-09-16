@@ -11,7 +11,7 @@ Python Prompt Package
 -  `Questions <mailto:sfischer13@ymail.com>`__ can be asked via e-mail.
 -  `Source code <https://github.com/sfischer13/python-prompt>`__ is
    tracked on GitHub.
--  `Changes <https://github.com/sfischer13/python-prompt/CHANGELOG.rst>`__
+-  `Changes <https://github.com/sfischer13/python-prompt/blob/master/CHANGELOG.rst>`__
    between releases are documented.
 -  `Bugs <https://github.com/sfischer13/python-prompt/issues>`__ can be
    reported on the issue tracker.
