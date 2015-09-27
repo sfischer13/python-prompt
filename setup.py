@@ -14,7 +14,7 @@ def read(name):
 
 setup(
     name="prompt",
-    version="0.1.0",
+    version="0.2.0",
     author="Stefan Fischer",
     author_email="sfischer13@ymail.com",
     url="https://github.com/sfischer13/python-prompt/",

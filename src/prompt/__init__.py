@@ -36,10 +36,10 @@ __author__ = "Stefan Fischer"
 __contact__ = "Stefan Fischer <sfischer13@ymail.com>"
 __copyright__ = "Copyright (c) 2015 Stefan Fischer"
 __credits__ = []
-__date__ = "2015-09-16"
+__date__ = "2015-09-27"
 __license__ = "MIT"
 __status__ = "development"
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 PROMPT = "? "
 RE_EMAIL_SIMPLE = re.compile(r"^[^@]+@[^@]+\.[^@]+$")
