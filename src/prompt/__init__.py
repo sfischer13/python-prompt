@@ -42,6 +42,7 @@ __status__ = "development"
 __version__ = "0.1.0"
 
 PROMPT = "? "
+RE_EMAIL_SIMPLE = re.compile(r"^[^@]+@[^@]+\.[^@]+$")
 
 
 def character(prompt=None, empty=False):
@@ -52,6 +53,20 @@ def character(prompt=None, empty=False):
         return s
     else:
         return character(prompt=prompt, empty=empty)
+
+
+def email(prompt=None, empty=False, mode="simple"):
+    if mode == "simple":
+        s = _prompt_input(prompt)
+        if empty and not s:
+            return None
+        else:
+            if RE_EMAIL_SIMPLE.match(s):
+                return s
+            else:
+                return email(prompt=prompt, empty=empty, mode=mode)
+    else:
+        raise ValueError
 
 
 def integer(prompt=None, empty=False):
