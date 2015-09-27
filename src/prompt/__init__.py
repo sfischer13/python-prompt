@@ -29,6 +29,7 @@ The package may be imported directly::
 The library was initiated by Stefan Fischer and is developed and maintained by many others.
 """
 
+import getpass
 import re
 
 __author__ = "Stefan Fischer"
@@ -85,6 +86,19 @@ def regex(pattern, prompt=None, empty=False, flags=0):
             return m
         else:
             return regex(pattern, prompt=prompt, empty=empty, flags=flags)
+
+
+def secret(prompt=None, empty=False):
+    if prompt is None:
+        prompt = PROMPT
+    s = getpass.getpass(prompt=prompt)
+    if empty and not s:
+        return None
+    else:
+        if s:
+            return s
+        else:
+            return secret(prompt=prompt, empty=empty)
 
 
 def string(prompt=None, empty=False):
