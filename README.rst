@@ -3,10 +3,10 @@ Python Prompt Package
 
 |PyPI Version| |PyPI Downloads| |Travis| |Documentation Status|
 
-| This is a library for prompting input on the command line.
+| Prompt and verify user input on the command line.
 | Python 3.2+ and Wheels are supported.
-| It was initiated by Stefan Fischer and is developed and maintained by
-  many others.
+
+The project was initiated by Stefan Fischer.
 
 -  `Documentation <https://readthedocs.org/projects/prompt>`__ is
    available on PythonHosted.
