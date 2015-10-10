@@ -19,14 +19,14 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-"""
-This is a library for prompting input on the command line.
+"""Prompt and verify user input on the command line.
 
-The package may be imported directly::
+The project was initiated by Stefan Fischer.
 
-    import prompt
+Note
+----
+    This project is still a work in progress.
 
-The library was initiated by Stefan Fischer and is developed and maintained by many others.
 """
 
 import getpass
@@ -42,10 +42,28 @@ __status__ = "development"
 __version__ = "0.2.0"
 
 PROMPT = "? "
+"""Prompt that will be shown by default."""
 RE_EMAIL_SIMPLE = re.compile(r"^[^@]+@[^@]+\.[^@]+$")
+"""Regular expression for email addresses."""
 
 
 def character(prompt=None, empty=False):
+    """Prompt a single character.
+
+    Parameters
+    ----------
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+
+    Returns
+    -------
+    str or None
+        A str if the user entered a single-character, non-empty string.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    """
     s = _prompt_input(prompt)
     if empty and not s:
         return None
@@ -56,6 +74,28 @@ def character(prompt=None, empty=False):
 
 
 def email(prompt=None, empty=False, mode="simple"):
+    """Prompt an email address.
+
+    This check is based on a simple regular expression and does not verify
+    whether an email actually exists.
+
+    Parameters
+    ----------
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+    mode : {'simple'}, optional
+        'simple' will use a simple regular expression.
+        No other mode is implemented yet.
+
+    Returns
+    -------
+    str or None
+        A str if the user entered a likely email address.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    """
     if mode == "simple":
         s = _prompt_input(prompt)
         if empty and not s:
@@ -70,6 +110,22 @@ def email(prompt=None, empty=False, mode="simple"):
 
 
 def integer(prompt=None, empty=False):
+    """Prompt an integer.
+
+    Parameters
+    ----------
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+
+    Returns
+    -------
+    int or None
+        An int if the user entered a valid integer.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    """
     s = _prompt_input(prompt)
     if empty and not s:
         return None
@@ -81,6 +137,22 @@ def integer(prompt=None, empty=False):
 
 
 def real(prompt=None, empty=False):
+    """Prompt a real number.
+
+    Parameters
+    ----------
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+
+    Returns
+    -------
+    float or None
+        A float if the user entered a valid real number.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    """
     s = _prompt_input(prompt)
     if empty and not s:
         return None
@@ -92,6 +164,30 @@ def real(prompt=None, empty=False):
 
 
 def regex(pattern, prompt=None, empty=False, flags=0):
+    """Prompt a string that matches a regular expression.
+
+    Parameters
+    ----------
+    pattern : str
+        A regular expression that must be matched.
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+    flags : int, optional
+        Flags that will be passed to ``re.match``.
+
+    Returns
+    -------
+    Match or None
+        A match object if the user entered a matching string.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    See Also
+    --------
+    re.match
+
+    """
     s = _prompt_input(prompt)
     if empty and not s:
         return None
@@ -104,6 +200,31 @@ def regex(pattern, prompt=None, empty=False, flags=0):
 
 
 def secret(prompt=None, empty=False):
+    """Prompt a string without echoing.
+
+    Parameters
+    ----------
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+
+    Returns
+    -------
+    str or None
+        A str if the user entered a non-empty string.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    Raises
+    ------
+    getpass.GetPassWarning
+        If echo free input is unavailable.
+
+    See Also
+    --------
+    getpass.getpass
+
+    """
     if prompt is None:
         prompt = PROMPT
     s = getpass.getpass(prompt=prompt)
@@ -117,6 +238,22 @@ def secret(prompt=None, empty=False):
 
 
 def string(prompt=None, empty=False):
+    """Prompt a string.
+
+    Parameters
+    ----------
+    prompt : str, optional
+        Use an alternative prompt.
+    empty : bool, optional
+        Allow an empty response.
+
+    Returns
+    -------
+    str or None
+        A str if the user entered a non-empty string.
+        None if the user pressed only Enter and ``empty`` was True.
+
+    """
     s = _prompt_input(prompt)
     if empty and not s:
         return None
