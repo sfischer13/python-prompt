@@ -8,11 +8,23 @@ Python Prompt Package
 | It was initiated by Stefan Fischer and is developed and maintained by
   many others.
 
+-  `Documentation <https://readthedocs.org/projects/prompt>`__ is
+   available on PythonHosted.
 -  `Questions <mailto:sfischer13@ymail.com>`__ can be asked via e-mail.
--  `Source code <https://github.com/sfischer13/python-prompt>`__ is
-   tracked on GitHub.
+
+.. raw:: html
+
+   <!-- nothing -->
+
 -  `Changes <https://github.com/sfischer13/python-prompt/blob/master/CHANGELOG.rst>`__
    between releases are documented.
+
+.. raw:: html
+
+   <!-- nothing -->
+
+-  `Source code <https://github.com/sfischer13/python-prompt>`__ is
+   tracked on GitHub.
 -  `Bugs <https://github.com/sfischer13/python-prompt/issues>`__ can be
    reported on the issue tracker.
 
@@ -31,19 +43,22 @@ The package is available on
 Use
 ---
 
-The package may be imported directly:
+An extensive `documentation <https://readthedocs.org/projects/prompt>`__
+is available.
 
 ::
 
     import prompt
 
+    email = prompt.email()
+
     # modify default prompt
     integer = prompt.integer(prompt="Please enter a number: ")
 
-    # allow empty response and return None
+    # allow empty response
     real = prompt.real(empty=True)
 
-    # require a two digit number
+    # require a two digit number using a regular expression
     regex = prompt.regex("^\d\d$")
 
 Contribute
