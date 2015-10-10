@@ -39,7 +39,7 @@ __credits__ = []
 __date__ = "2015-10-10"
 __license__ = "MIT"
 __status__ = "production"
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 PROMPT = "? "
 """Prompt that will be shown by default."""
