@@ -3,20 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to prompt's documentation!
-==================================
+Python :mod:`prompt` Package
+============================
 
-Contents:
+.. automodule:: prompt
+   :synopsis: Prompt and verify user input on the command line.
+.. moduleauthor:: Stefan Fischer <sfischer13@ymail.com>
+
+Documentation
+=============
 
 .. toctree::
    :maxdepth: 2
 
+   examples
+   functions
 
-
-Indices and tables
-==================
+Indices
+=======
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
-
