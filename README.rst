@@ -1,7 +1,7 @@
 Python Prompt Package
 =====================
 
-|PyPI Version| |PyPI Downloads| |Travis|
+|PyPI Version| |PyPI Downloads| |Travis| |Documentation Status|
 
 | This is a library for prompting input on the command line.
 | Python 3.2+ and Wheels are supported.
@@ -74,6 +74,8 @@ License
    :target: https://pypi.python.org/pypi/prompt
 .. |Travis| image:: https://img.shields.io/travis/sfischer13/python-prompt.svg
    :target: https://travis-ci.org/sfischer13/python-prompt
+.. |Documentation Status| image:: https://readthedocs.org/projects/prompt/badge/?version=latest
+   :target: http://prompt.readthedocs.org/en/latest/?badge=latest
 .. |PyPI Python Versions| image:: https://img.shields.io/pypi/pyversions/prompt.svg
    :target: https://pypi.python.org/pypi/prompt
 .. |PyPI Wheel| image:: https://img.shields.io/pypi/wheel/prompt.svg
