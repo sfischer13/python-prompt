@@ -1,5 +1,5 @@
-Usage Examples
-==============
+Examples
+========
 
 1. Ask for a floating point number:
     >>> prompt.real()
