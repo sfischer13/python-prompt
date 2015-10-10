@@ -1,5 +1,5 @@
-API Functions
-=============
+API 
+===
 
 .. automodule:: prompt
    :members:

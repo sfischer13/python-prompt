@@ -17,7 +17,7 @@ Documentation
    :maxdepth: 2
 
    examples
-   functions
+   api
 
 Indices
 =======
