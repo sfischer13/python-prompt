@@ -23,6 +23,8 @@ setup(
     long_description=read("README.rst"),
     keywords="prompt input console terminal tty",
     install_requires=[],
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
     packages=find_packages("src"),
     package_dir={"": "src"},
     classifiers=[
@@ -46,5 +48,4 @@ setup(
         "Topic :: Terminals",
         "Topic :: Utilities"
     ],
-    test_suite="nose.collector",
     zip_safe=True)

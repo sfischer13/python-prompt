@@ -12,9 +12,8 @@ env:
   - TOX_ENV=py34
   - TOX_ENV=py35
   - TOX_ENV=pypy3
+  - TOX_ENV=coverage
 
-install:
-  - pip install tox
+install: pip install tox
 
-script:
-  - tox -v -e $TOX_ENV
+script: tox -v -e $TOX_ENV
