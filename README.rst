@@ -1,7 +1,7 @@
 Python Prompt Package
 =====================
 
-|PyPI Version| |PyPI Downloads| |Travis| |Documentation Status|
+|PyPI Version| |PyPI Downloads| |Travis| |Coverage Status| |Documentation Status|
 
 | Prompt and verify user input on the command line.
 | Python 3.2+ and Wheels are supported.
@@ -81,6 +81,8 @@ License
    :target: https://pypi.python.org/pypi/prompt
 .. |Travis| image:: https://img.shields.io/travis/sfischer13/python-prompt.svg
    :target: https://travis-ci.org/sfischer13/python-prompt
+.. |Coverage Status| image:: https://coveralls.io/repos/sfischer13/python-prompt/badge.svg?branch=master&service=github
+   :target: https://coveralls.io/github/sfischer13/python-prompt?branch=master
 .. |Documentation Status| image:: https://readthedocs.org/projects/prompt/badge/?version=latest
    :target: http://prompt.readthedocs.org/en/latest/?badge=latest
 .. |PyPI Python Versions| image:: https://img.shields.io/pypi/pyversions/prompt.svg
