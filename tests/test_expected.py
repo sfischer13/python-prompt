@@ -38,11 +38,15 @@ def test_real(input_patch):
 def test_regex(input_patch):
     import re
     response = "1. x=9"
-    real_match = re.match(r"[0-9]\.\s[a-z]=[0-9]", response)
+    real_match = re.match(r"[0-9]\.\s([a-z])=([0-9])", response)
     input_patch.do(response)
-    prompt_match = prompt.regex("[0-9]\\.\\s[a-z]=[0-9]")
+    prompt_match = prompt.regex("[0-9]\\.\\s([a-z])=([0-9])")
     assert prompt_match is not None
-    assert str(prompt_match) == str(real_match)
+    assert prompt_match.group() == real_match.group()
+    assert prompt_match.groups() == real_match.groups()
+    assert prompt_match.re == real_match.re
+    assert prompt_match.span() == real_match.span()
+    assert prompt_match.string == real_match.string
 
 
 def test_secret(input_patch):
