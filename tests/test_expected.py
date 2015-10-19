@@ -42,7 +42,7 @@ def test_regex(input_patch):
     input_patch.do(response)
     prompt_match = prompt.regex("[0-9]\\.\\s[a-z]=[0-9]")
     assert prompt_match is not None
-    assert repr(prompt_match) == repr(real_match)
+    assert str(prompt_match) == str(real_match)
 
 
 def test_secret(input_patch):
