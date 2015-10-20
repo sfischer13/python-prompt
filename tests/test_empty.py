@@ -16,6 +16,10 @@ def test_character():
     assert prompt.character(empty=True) is None
 
 
+def test_email():
+    assert prompt.email(empty=True) is None
+
+
 def test_integer():
     assert prompt.integer(empty=True) is None
 

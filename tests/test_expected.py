@@ -25,6 +25,11 @@ def test_character(input_patch):
     assert prompt.character() == "c"
 
 
+def test_email(input_patch):
+    input_patch.do("foo@bar.not")
+    assert prompt.email() == "foo@bar.not"
+
+
 def test_integer(input_patch):
     input_patch.do("1")
     assert prompt.integer() == 1
