@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2015 Stefan Fischer
+# Copyright (c) 2015-2016 Stefan Fischer
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -34,12 +34,12 @@ import re
 
 __author__ = "Stefan Fischer"
 __contact__ = "Stefan Fischer <sfischer13@ymail.com>"
-__copyright__ = "Copyright (c) 2015 Stefan Fischer"
+__copyright__ = "Copyright (c) 2015-2016 Stefan Fischer"
 __credits__ = []
-__date__ = "2015-10-10"
+__date__ = "2016-03-22"
 __license__ = "MIT"
 __status__ = "production"
-__version__ = "0.3.1"
+__version__ = "0.3.2"
 
 PROMPT = "? "
 """Prompt that will be shown by default."""

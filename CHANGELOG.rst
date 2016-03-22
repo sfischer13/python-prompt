@@ -5,7 +5,7 @@ Change Log
 | This project adheres to `Semantic Versioning <http://semver.org/>`__.
 | You should `Keep a CHANGELOG <http://keepachangelog.com/>`__, too!
 
-`Next Release <https://github.com/sfischer13/python-prompt/compare/0.3.1...HEAD>`__
+`Next Release <https://github.com/sfischer13/python-prompt/compare/0.3.2...HEAD>`__
 -----------------------------------------------------------------------------------
 
 Added
@@ -25,6 +25,15 @@ Removed
 
 Security
 ~~~~~~~~
+
+`0.3.2 <https://github.com/sfischer13/python-prompt/compare/0.3.1...0.3.2>`__ - 2016-03-22
+------------------------------------------------------------------------------------------
+
+Added
+~~~~~
+
+-  unit tests
+-  coverage testing
 
 `0.3.1 <https://github.com/sfischer13/python-prompt/compare/0.3.0...0.3.1>`__ - 2015-10-10
 ------------------------------------------------------------------------------------------
