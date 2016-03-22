@@ -14,7 +14,7 @@ def read(name):
 
 setup(
     name="prompt",
-    version="0.3.2",
+    version="0.4.0",
     author="Stefan Fischer",
     author_email="sfischer13@ymail.com",
     url="https://github.com/sfischer13/python-prompt/",
@@ -36,7 +36,6 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.2",
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",

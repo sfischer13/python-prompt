@@ -4,7 +4,7 @@ Python Prompt Package
 |PyPI Version| |PyPI Downloads| |Travis| |Coverage Status| |Documentation Status|
 
 | Prompt and verify user input on the command line.
-| Python 3.2+ and Wheels are supported.
+| Python 3.3+ and Wheels are supported.
 
 The project was initiated by Stefan Fischer.
 
