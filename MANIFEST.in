@@ -1,4 +1,7 @@
-include *.rst
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
 include LICENSE
+include README.rst
 include tox.ini
 include .coveragerc
