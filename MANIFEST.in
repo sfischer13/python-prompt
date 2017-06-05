@@ -5,3 +5,9 @@ include LICENSE
 include README.rst
 include tox.ini
 include .coveragerc
+
+recursive-include prompt *.py
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
