@@ -2,14 +2,27 @@ sudo: false
 
 language: python
 
-python: 3.5
+python:
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+  - nightly
 
-env:
-  - TOX_ENV=py33
-  - TOX_ENV=py34
-  - TOX_ENV=py35
-  - TOX_ENV=coverage
+matrix:
+  fast_finish: true
+  allow_failures:
+    - python: nightly
 
-install: pip install tox
+install:
+  - pip install .
+  - pip install -r requirements.txt
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install -r requirements_dev.txt; fi
 
-script: tox -v -e $TOX_ENV
+script:
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.3 || $TRAVIS_PYTHON_VERSION == 3.4 ]]; then py.test; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.5 || $TRAVIS_PYTHON_VERSION == 3.6 || $TRAVIS_PYTHON_VERSION == nightly ]]; then pytest; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then coverage run --source=prompt setup.py test; fi
+
+after_success:
+- if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then coveralls; fi
