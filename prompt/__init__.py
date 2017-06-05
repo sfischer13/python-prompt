@@ -38,7 +38,7 @@ __copyright__ = "Copyright (c) 2015-2016 Stefan Fischer"
 __credits__ = []
 __date__ = "2016-03-22"
 __license__ = "MIT"
-__status__ = "production"
+__status__ = "development"
 __version__ = "0.4.0"
 
 PROMPT = "? "

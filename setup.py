@@ -13,7 +13,7 @@ setup(
     author='Stefan Fischer',
     author_email='sfischer13@ymail.com',
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
