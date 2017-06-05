@@ -23,10 +23,6 @@
 
 The project was initiated by Stefan Fischer.
 
-Note
-----
-    This project is still a work in progress.
-
 """
 
 import getpass
