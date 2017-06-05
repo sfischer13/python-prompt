@@ -1,12 +1,8 @@
+sudo: false
+
 language: python
 
 python: 3.5
-
-sudo: false
-
-branches:
-  only:
-    - master
 
 env:
   - TOX_ENV=py33
