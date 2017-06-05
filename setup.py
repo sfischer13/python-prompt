@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
 
 import os.path
+#!/usr/bin/env python
 
 from setuptools import find_packages
 from setuptools import setup
@@ -35,6 +35,7 @@ setup(
     ],
     install_requires=[],
     description='Library for prompting input on the command line.',
+    include_package_data=True,
     keywords='prompt input console terminal tty',
     license='MIT',
     long_description=read('README.rst'),
