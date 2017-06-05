@@ -2,7 +2,6 @@
 
 import os.path
 
-from setuptools import find_packages
 from setuptools import setup
 
 def read(name):
@@ -40,8 +39,8 @@ setup(
     license='MIT',
     long_description=read('README.rst'),
     name='prompt',
-    package_dir={'': 'src'},
-    packages=find_packages('src'),
+    package_dir={'prompt': 'prompt'},
+    packages=['prompt'],
     python_requires='>=3.3',
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],

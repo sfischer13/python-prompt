@@ -1,0 +1,11 @@
+__author__ = "Stefan Fischer"
+__email__ = "sfischer13@ymail.com"
+__contact__ = "Stefan Fischer <{}>".format(__email__)
+__copyright__ = "Copyright (c) 2015-2016 {}".format(__author__)
+__credits__ = []
+__date__ = "2016-03-22"
+__license__ = "MIT"
+__status__ = "production"
+__summary__ = "Prompt and verify user input on the command line."
+__url__ = "https://github.com/sfischer13/python-prompt/"
+__version__ = "0.4.0"
