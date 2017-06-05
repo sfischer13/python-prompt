@@ -69,7 +69,7 @@ Contribute
 License
 -------
 
-| Copyright (c) 2015-2016 Stefan Fischer
+| Copyright (c) 2015-2017 Stefan Fischer
 | The source code is available under the **MIT License**.
 | See
   `LICENSE <https://github.com/sfischer13/python-prompt/blob/master/LICENSE>`__
