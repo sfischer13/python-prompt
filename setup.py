@@ -47,4 +47,4 @@ setup(
     tests_require=['pytest'],
     url='https://github.com/sfischer13/python-prompt',
     version='0.4.0',
-    zip_safe=True)
+    zip_safe=False)
