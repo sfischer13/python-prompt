@@ -49,5 +49,5 @@ setup(
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     url='https://github.com/sfischer13/python-prompt',
-    version='0.4.0',
+    version='0.4.1',
     zip_safe=False)
