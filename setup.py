@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 
-import os.path
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
-from setuptools import setup
+with open('README.rst') as readme_file:
+    readme = readme_file.read()
 
-def read(name):
-    path = os.path.join(os.path.dirname(__file__), name)
-    with open(path) as f:
-        return f.read()
+with open('HISTORY.rst') as history_file:
+    history = history_file.read()
+
+requirements = []
 
 setup(
     author='Stefan Fischer',
@@ -32,12 +36,12 @@ setup(
         'Topic :: Terminals',
         'Topic :: Utilities'
     ],
-    install_requires=[],
     description='Library for prompting input on the command line.',
     include_package_data=True,
+    install_requires=requirements,
     keywords='prompt input console terminal tty',
     license='MIT',
-    long_description=read('README.rst'),
+    long_description=readme + '\n\n' + history,
     name='prompt',
     package_dir={'prompt': 'prompt'},
     packages=['prompt'],
